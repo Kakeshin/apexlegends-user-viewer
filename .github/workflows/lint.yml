@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: 💿 Setup
+      - name: 🍕 Setup
         run: yarn install
       - name: 🔬 ESLint
         run: yarn lint
