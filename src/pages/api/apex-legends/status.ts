@@ -9,7 +9,7 @@ const handler = async (
   const data = await apexLegendsStatusRepository.fetchUser(
     req.body["api-key"],
     req.body["platform"],
-    req.body["userName"]
+    req.body["user-name"]
   );
   res.status(200).json(data);
 };
