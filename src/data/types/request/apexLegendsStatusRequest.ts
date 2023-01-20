@@ -1,4 +1,4 @@
 export interface ApexLegendsStatusRequest {
-  userName: string;
-  platform: string;
+  userName: string
+  platform: string
 }
