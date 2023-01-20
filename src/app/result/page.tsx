@@ -1,7 +1,7 @@
 import axios from "axios";
 
 interface Props {
-  searchParams: { apiKey: string; platform: string; userName: string };
+  searchParams: { platform: string; userName: string };
 }
 
 const Page = async ({ searchParams: data }: Props) => {
@@ -11,7 +11,7 @@ const Page = async ({ searchParams: data }: Props) => {
   );
   return (
     <div>
-      <h1>Axe</h1>
+      <h1>Axe確定</h1>
       <div>
         <label>{JSON.stringify(result.data)}</label>
       </div>

@@ -8,10 +8,6 @@ const Page = () => {
           <div>
             <form method="get" action="/result">
               <div>
-                <label>Api Key</label>
-                <input type="text" name="apiKey" />
-              </div>
-              <div>
                 <label>Platform</label>
                 <input type="text" name="platform" />
               </div>

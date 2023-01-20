@@ -7,7 +7,6 @@ const handler = async (
   res: NextApiResponse<ApexLegendsStatusResponse>
 ) => {
   const data = await apexLegendsStatusRepository.fetchUser(
-    req.body["apiKey"],
     req.body["platform"],
     req.body["userName"]
   );

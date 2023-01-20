@@ -3,15 +3,14 @@ import { ApexLegendsStatusResponse } from "@/data/types/response/apexLegendsStat
 
 interface ApexLegendsStatusRepositoryInterface {
   fetchUser: (
-    apiKey: string,
     platform: string,
     userName: string
   ) => Promise<ApexLegendsStatusResponse>;
 }
 
 const ApexLegendsStatusRepository: ApexLegendsStatusRepositoryInterface = {
-  fetchUser(apiKey, platform, userName) {
-    return getApexLegendsStatus({ apiKey, platform, userName });
+  fetchUser(platform, userName) {
+    return getApexLegendsStatus({ platform, userName });
   },
 };
 
