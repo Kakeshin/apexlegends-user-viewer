@@ -3,7 +3,7 @@ export interface Badge {
   value: number;
 }
 
-export interface ApexLegendsStatus {
+export interface ApexLegendsStatusResponse {
   global: {
     name: string;
     uid: string;

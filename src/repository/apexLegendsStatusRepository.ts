@@ -1,11 +1,11 @@
-import { ApexLegendsStatus } from "@/data/types/apexLegendsStatus";
+import { ApexLegendsStatusResponse } from "@/data/types/response/apexLegendsStatusResponse";
 
 interface ApexLegendsStatusRepositoryInterface {
   fetchUser: (
     apiKey: string,
     platform: string,
     userName: string
-  ) => Promise<ApexLegendsStatus>;
+  ) => Promise<ApexLegendsStatusResponse>;
 }
 
 const ApexLegendsStatusRepository: ApexLegendsStatusRepositoryInterface = {

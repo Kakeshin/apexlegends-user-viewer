@@ -1,10 +1,10 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { ApexLegendsStatus } from "@/data/types/apexLegendsStatus";
+import { ApexLegendsStatusResponse } from "@/data/types/response/apexLegendsStatusResponse";
 import apexLegendsStatusRepository from "@/repository/apexLegendsStatusRepository";
 
 const handler = async (
   req: NextApiRequest,
-  res: NextApiResponse<ApexLegendsStatus>
+  res: NextApiResponse<ApexLegendsStatusResponse>
 ) => {
   const data = await apexLegendsStatusRepository.fetchUser(
     req.body["api-key"],
