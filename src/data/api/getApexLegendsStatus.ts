@@ -6,8 +6,9 @@ const getApexLegendsStatus = async ({
   platform,
   userName,
 }: ApexLegendsStatusRequest): Promise<ApexLegendsStatusResponse> => {
+  const baseUrl = process.env.APEX_LEGENDS_BASE_URL
   const apiKey = process.env.APEX_LEGENDS_API_KEY
-  const url = `https://api.mozambiquehe.re/bridge?auth=${apiKey}&player=${userName}&platform=${platform}`
+  const url = `${baseUrl}=${apiKey}&player=${userName}&platform=${platform}`
 
   return (await axios.get<ApexLegendsStatusResponse>(url)).data
 }
