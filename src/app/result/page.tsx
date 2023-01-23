@@ -1,4 +1,5 @@
 import axios from 'axios'
+import styles from './page.module.css'
 
 interface Props {
   searchParams: { platform: string; userName: string }
@@ -12,17 +13,19 @@ const Page = async ({ searchParams: data }: Props) => {
     rank: { rankName, rankImg },
   } = result.data.global
   return (
-    <div>
-      <h1>Axe確定</h1>
+    <main className={styles.main}>
       <div>
+        <h1>Apex Legends User Information</h1>
         <div>
-          <h3>Name: {name}</h3>
-          <h3>UID: {uid}</h3>
-          <h3>NOW RANK:{rankName}</h3>
-          <img src={rankImg} alt='rank image' />
+          <div>
+            <h3>Name: {name}</h3>
+            <h3>UID: {uid}</h3>
+            <h3>NOW RANK:{rankName}</h3>
+            <img src={rankImg} alt='rank image' />
+          </div>
         </div>
       </div>
-    </div>
+    </main>
   )
 }
 

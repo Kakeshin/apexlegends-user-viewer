@@ -1,0 +1,27 @@
+.main {
+    /* padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh; */
+}
+
+.wrapper {
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  margin: 1rem;
+  font-size: 1.0rem;
+  max-width: var(--max-width);
+  width: 100%;
+  z-index: 2;
+  font-family: var(--font-mono);
+}
+
+.container {
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  margin: 1rem;
+}
