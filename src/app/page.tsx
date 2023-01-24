@@ -9,7 +9,7 @@ const Page = () => {
           <div className={styles.container}>
             <h2>必須パラメータ</h2>
             <div>
-              <form method='get' action='/result'>
+              <form method='get' action='/ssr/result'>
                 <div>
                   <label>Platform</label>
                   <input type='text' name='platform' />
